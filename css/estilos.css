@@ -1,0 +1,677 @@
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    font-size: 20px;
+}
+
+p {
+    padding: 5px;
+}
+
+header {
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0px 4px 4px grey;    
+}
+
+header.blanco {
+    box-shadow: initial;
+}
+
+.headerinicio {
+    background-color: white;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: fixed;
+    z-index: 2;
+}
+
+.burger {
+    font-size: 34px;
+    display: none;
+}
+
+.blanco .burger {
+    color: black;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+.logo2 {
+    font-size: 30px;
+}
+
+.logo3 {
+    font-size: 30px;
+}
+
+.blanco .logo {
+    color: grey;
+}
+
+.blanco .logo:hover {
+    color: black;
+}
+
+.sombraheader {
+    width: 100%;
+    height: 15px;
+    position: sticky;
+    top: 100px;
+    background: -webkit-linear-gradient(top, black 10%, transparent);
+    z-index: 1;
+}
+
+a {
+    text-decoration: none;
+    color: #282828;
+}
+
+a:hover {
+    color: red;
+}
+
+a.activo {
+    color: rgb(255, 0, 0);
+}
+
+img {
+    max-width: 100%;
+}
+
+.boton {
+    margin: 20px;
+    color: black;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(43, 40, 40);
+}
+
+@keyframes intermitente {
+    0% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.fila {
+    margin: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primera {
+    margin-top: 100px;
+}
+
+.imagen1 {
+    box-shadow: 2px 2px 6px black;
+    border-radius: 8px;
+}
+
+.imagenes {
+    margin: 20px;
+    padding: 20px;
+    border: 20px;
+}
+.col1 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+.col2 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 2;
+}
+
+.col3 {
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 5;
+    text-align: justify;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.pie {
+    display: flex;
+    align-items: flex-end;
+}
+
+.eslogan {
+    font-size: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.657);
+}
+
+.separador {
+    display:none;
+    border: solid 1px black;
+    width: 60%;
+}
+
+.logo {
+    font-size: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    padding: 0 15px;
+}
+
+.blanco nav ul li a {
+    color: black;
+}
+
+.blanco nav ul li a.activo {
+    color: rgb(189, 0, 0);
+}
+
+.hero {
+    height: 100vh;
+    background-image: url('../img/fondo111.jpg');
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 3em;
+}
+
+.hero2 {
+    height: 120px;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    line-height: 3em;
+}
+
+.hero h1 {
+    color: black;
+    font-size: 50px;
+    text-shadow: 2px 2px 6px black;
+}
+
+.hero h2 {
+    color: black;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 6px black;
+}
+
+.hero a {
+    color: black;
+    font-size: 40px;
+    margin-bottom: 60px;
+    animation-name: intermitente;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+
+.miniform {
+    border: solid 5px;
+    width: 30%;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;   
+}
+
+.miniform p {
+    color: black;
+    font-size: 35px;
+    margin: 20px;
+    text-align: center;
+}
+
+.miniform input {
+    border: 2px solid black;
+    color: black;
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+.miniform .boton {
+    border: 5px solid black;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    padding: 11px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+footer {
+    background-color: rgb(66, 63, 63);
+    background-size:16px 16px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.contenedor {
+    margin: 120px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    grid-template-rows: repeat(1, 500px);
+    grid-gap: 40px;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 500px;
+    box-shadow: 4px 4px 8px grey;
+}
+
+.imagen {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.imagen img {
+    height: 200px;   
+}
+
+.datos {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px;
+    font-size: 25px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.direccion {
+   width: 300px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(207, 2, 2);
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 4px solid rgb(100, 0, 0); 
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(121, 0, 0);
+    border-bottom: 4px solid rgb(44, 0, 0);
+}
+
+.navegacionnumeros {
+   width: 100%;
+   margin: 50px 0px;
+   display: flex;   
+   justify-content: center;
+}
+
+ .ppp {
+    margin: 10px;
+    text-decoration: none;
+    background-color: rgb(163, 163, 163);
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 5px;
+    border-bottom: 5px solid rgb(77, 77, 77); 
+    align-self: center;
+    margin-bottom: 10px;
+ }
+
+.letramin {
+    font-size: 15px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 18px;
+    padding: 5px;
+}
+
+.izdo {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.centro {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 0px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+footer a.activo {
+    color: rgb(255, 255, 255);
+}
+
+.rrss {
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+     width: 80px;
+    text-align: right;
+}
+
+.rrss a {
+    font-size: 22px;
+    color: #666666;
+}
+
+.rrss a:hover {
+    font-size: 22px;
+    color: rgb(145, 0, 0);
+}
+
+.dcho {
+    flex-basis: 300px;
+    flex-grow: 1;
+    padding: 15px;
+    font-size: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy {
+    padding: 5px;
+    width: 100%;    
+}
+
+.copy p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.legales h1 {
+    font-size: 26px;
+    padding-bottom: 10px;
+}
+
+.legales h1+h2 {
+    padding-top: 20px;
+}
+
+.legales h2 {
+    font-size: 18px;
+}
+
+.legales p, .legales li {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 1.5em;
+}
+
+.legales ul {
+    padding-left: 40px;
+}
+
+.legales ul li {
+    font-size: 16px;
+    padding: 5px;
+}
+
+@media (min-width: 1280px) {
+    .hero, .fondo {
+        background-attachment: scroll;
+    }
+
+    .miniform input {
+        margin: 8px;
+        padding: 8px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .miniform input {
+        margin: 6px;
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .miniform .boton {
+        border: 5px solid black;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .miniform p{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 720px) {
+    .fila {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .columna {
+        margin: 20px;
+    }
+
+    .separador {
+        display: initial;
+    }
+
+    .miniform input {
+        margin: 4px;
+        padding: 4px;
+        font-size: 10px;
+    }
+
+    .miniform .boton {
+        border: 5px solid black;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .miniform p{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 640px) {
+    .burger {
+        display: initial;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero h1 {
+        padding: 0px 10px;
+        font-size: 36px;
+        text-shadow: 2px 2px 6px black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero h2 {
+        padding: 0px 10px;
+        font-size: 28px;
+        text-shadow: 2px 2px 6px black;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fondo {
+        padding: 0 20px 0 20px;
+    }
+
+    .eslogan {
+        font-size: 30px;
+        margin: 0px;
+    }
+
+    .miniform {
+        text-align: center;
+    }
+
+    .izdo, .centro, .dcho {
+        flex-basis: 200px;
+    }
+
+    .miniform input {
+        margin: 3px;
+        padding: 3px;
+        font-size: 6px;
+    }
+
+    .miniform .boton {
+        border: 5px solid black;
+        background-color: black;
+        color: white;
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .miniform p{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    .fila {
+        margin: 20px 0px 20px 0px;
+    }
+
+    .fila.primera {
+        margin: 100px 0px 20px 0px;
+    }
+
+    .miniform input {
+        font-size: 20px;
+    }
+
+    .miniform .boton {
+        font-size: 20px;   
+    }
+
+    .ultima {
+        margin: 20px 0 40px 0;
+    }
+
+    .izdo {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .miniform .boton:hover {
+        font-size: 20px;
+        color: white;
+    } 
+
+    .miniform input {
+        margin: 3px;
+        padding: 3px;
+        font-size: 6px;
+    }
+
+    .miniform .boton {
+        border: 5px solid black;
+        background-color: black;
+        color: white;
+        font-size: 5px;
+        padding: 2px;
+    }
+
+    .miniform p{
+        font-size: 15px;
+    }
+
+    .contenedor {
+        margin: 120px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 400px);
+        grid-template-rows: repeat(1, 500px);
+        grid-gap: 40px;
+        justify-content: center;
+        padding: 120px;
+    }
+    
+    .tarjeta {
+        width: 300px;
+        height: 500px;
+        box-shadow: 4px 4px 8px grey;
+    }
+}
